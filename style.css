@@ -110,6 +110,11 @@ body{
     width: 93%;
     height: 90%;
     background-color: rgba(155, 180, 180, 0.8);
+    transition: 0.5s;
+}
+.popular-city:hover{
+    background-color: rgba(155, 180, 180, 1);
+    box-shadow: 1px 1px 10px rgb(83, 120, 136);
 }
 
 .infos{
