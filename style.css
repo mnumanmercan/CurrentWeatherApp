@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
-    font-family: 'montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     background-image: url('bg1.jpg');
     background-position: center;
@@ -42,9 +42,9 @@ body{
 }
 
 .header h1{
-    font-size: 50px;
+    font-size: 40px;
     color: #00B4D8;
-    text-shadow: 1px 3px rgba(0, 0, 0, .9);
+    
    
 }
 
@@ -54,7 +54,19 @@ body{
     background: transparent;
     border: 0;
     outline: 0;
-    border-bottom: 2px solid #00B4D8;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 20px;
+    color: #f2f2f2;
+    transition: 0.4s;
+}
+.header input:hover,.header input:focus{
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid rgba(200, 200, 200, 0.2);
     text-align: center;
     font-size: 20px;
     color: #f2f2f2;
@@ -64,26 +76,26 @@ body{
     font-size: 35px;
     font-weight: 500;
     margin-bottom: 10px;
-    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    
 }
 
 .temp{
-    font-size: 100px;
+    font-size: 60px;
     font-weight: 700;
     margin-bottom: 15px;
-    text-shadow: 1px 5px rgba(0, 0, 0, 1);
+    
 }
 
 .desc{
     font-size: 30px;
     font-style: italic;
-    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    
     margin-bottom: 10px;
 }
 
 .humidity, .feels{
     font-size: 30px;
-    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    
 }
 
 /*Content City ---------------- Popular City*/
@@ -92,7 +104,7 @@ body{
     width: 60%;
     height: 80%;
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto;
     column-gap: 15px;
     row-gap: 15px;
     position:absolute;
@@ -109,11 +121,11 @@ body{
     padding-top: 15px;
     width: 93%;
     height: 90%;
-    background-color: rgba(155, 180, 180, 0.8);
+    background-color: rgba(155, 180, 180, 0.6);
     transition: 0.5s;
 }
 .popular-city:hover{
-    background-color: rgba(155, 180, 180, 1);
+    background-color: rgba(155, 180, 180, 0.9);
     box-shadow: 1px 1px 10px rgb(83, 120, 136);
 }
 
@@ -127,7 +139,7 @@ body{
 
 .popular-city > .temp{
     font-size: 20px;
-    text-shadow: 1px 3px rgba(0, 0, 0,0);
+    
 }
 .popular-city > .weather-icon{
     position: absolute;
@@ -140,6 +152,7 @@ body{
     padding-bottom:20px ;
     font-size: 20px;
     color: white;
-    text-shadow: none;
+    
 }
+
 
