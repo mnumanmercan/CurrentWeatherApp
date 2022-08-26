@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1b4be7268f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="header">
+                <h1>Weather App</h1>
+                <input type="text" id="searchBar" placeholder="Enter a city...">
+            </div>
+            <div class="content">
+                <div class="city">Istanbul, TR</div>
+                <div class="temp">15°C</div>
+                <div class="weather-icon">
+                    <img class="img" src="http://openweathermap.org/img/wn/10d@2x.png" width="120px" alt="">
+                    <div class="desc">Gunesli</div>
+                </div>
+
+                <div class="content-info">
+
+                    <div class="feels">15°C</div>
+                    <div class="humidity">19</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="content-city">
+            <div class="popular-city" id="london">
+                <h2>London | GB</h2>
+                <hr>
+                <div class="temp" id="london-temp">15°C</div>
+                <div class="weather-icon">
+                    <img class="img" src="http://openweathermap.org/img/wn/10d@2x.png" width="120px" alt="">
+                    <div class="desc">Gunesli</div>
+                </div>
+                <div class="infos">
+                    
+                    <div  id="london-humidity"><i class="fas fa-tint fa-fw"></i></div>
+                </div>
+            </div>
+            <div class="popular-city" id="istanbul">
+                <h2>Istanbul | TR</h2>
+                <hr>
+                <div class="temp" id="istanbul-temp">15°C</div>
+                <div class="weather-icon">
+                    <img class="img" src="http://openweathermap.org/img/wn/10d@2x.png" width="120px" alt="">
+                    <div class="desc">Gunesli</div>
+                </div>
+                <div class="infos">
+                    
+                    <div id="istanbul-humidity"><i class="fas fa-tint fa-fw"></i></div>
+                </div>
+            </div>
+            <div class="popular-city" id="ny">
+                <h2>New York | US</h2>
+                <hr>
+                <div class="temp" id="ny-temp">15°C</div>
+                <div class="weather-icon">
+                    <img class="img" src="http://openweathermap.org/img/wn/10d@2x.png" width="120px" alt="">
+                    <div class="desc">Gunesli</div>
+                </div>
+                <div class="infos">
+                
+                    <div id="ny-humidity"><i class="fas fa-tint fa-fw"></i></div>
+                </div>
+            </div>
+            <div class="popular-city" id="berlin">
+                <h2>Berlin | DE</h2>
+                <hr>
+                <div class="temp" id="berlin-temp">15°C</div>
+                <div class="weather-icon">
+                    <img class="img" src="http://openweathermap.org/img/wn/10d@2x.png" width="120px" alt="">
+                    <div class="desc">Gunesli</div>
+                </div>
+                <div class="infos">
+                    <div id="berlin-humidity"><i class="fas fa-tint fa-fw"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
