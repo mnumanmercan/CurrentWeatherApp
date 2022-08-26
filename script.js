@@ -30,7 +30,7 @@ const getResult2 = (cityName) => {
 const displayResult2 = (result) => {
 
     const cityName = result.name;
-    console.log(cityName)
+    console.log(result)
     switch (cityName) {
         case 'Londra':
             let londonTemp = document.querySelector("#london-temp");
@@ -38,7 +38,11 @@ const displayResult2 = (result) => {
             let londonDesc = document.querySelector('#london-desc');
             londonDesc.innerText = `${result.weather[0].description}`;
             let londonIcon = document.querySelector('#london-img');
-            londonIcon.src = `${iconUrl}${result.weather[0].icon}.png`
+            londonIcon.src = `${iconUrl}${result.weather[0].icon}.png`;
+            let londonNem = document.querySelector('#london-humidity');
+            londonNem.append(`${result.main.humidity}`);
+            let londonWind = document.querySelector('#london-wind');
+            londonWind.append(`${result.wind.speed}`);
             break;
         case 'New York kenti':
             let nyTemp = document.querySelector("#ny-temp");
@@ -46,7 +50,11 @@ const displayResult2 = (result) => {
             let nyDesc = document.querySelector('#ny-desc');
             nyDesc.innerText = `${result.weather[0].description}`;
             let nyIcon = document.querySelector('#ny-img');
-            nyIcon.src = `${iconUrl}${result.weather[0].icon}.png`
+            nyIcon.src = `${iconUrl}${result.weather[0].icon}.png`;
+            let nyNem = document.querySelector('#ny-humidity');
+            nyNem.append(`${result.main.humidity}`);
+            let nyWind = document.querySelector('#ny-wind');
+            nyWind.append(`${result.wind.speed}`);
             break;
         case 'İstanbul':
             let istTemp = document.querySelector("#istanbul-temp");
@@ -54,7 +62,11 @@ const displayResult2 = (result) => {
             let istDesc = document.querySelector('#ist-desc');
             istDesc.innerText = `${result.weather[0].description}`;
             let istIcon = document.querySelector('#ist-img');
-            istIcon.src = `${iconUrl}${result.weather[0].icon}.png`
+            istIcon.src = `${iconUrl}${result.weather[0].icon}.png`;
+            let istNem = document.querySelector('#ist-humidity');
+            istNem.append(`${result.main.humidity}`);
+            let istWind = document.querySelector('#ist-wind');
+            istWind.append(`${result.wind.speed}`);
             break;
         case 'Berlin':
 
@@ -63,7 +75,11 @@ const displayResult2 = (result) => {
             let berlinDesc = document.querySelector('#berlin-desc');
             berlinDesc.innerText = `${result.weather[0].description}`;
             let berlinIcon = document.querySelector('#berlin-img');
-            berlinIcon.src = `${iconUrl}${result.weather[0].icon}.png`
+            berlinIcon.src = `${iconUrl}${result.weather[0].icon}.png`;
+            let berlinNem = document.querySelector('#berlin-humidity');
+            berlinNem.append(`${result.main.humidity}`);
+            let berlinWind = document.querySelector('#berlin-wind');
+            berlinWind.append(`${result.wind.speed}`);
             break;
         default:
             console.log("Hata var");
