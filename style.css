@@ -11,6 +11,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     height: 100vh;
     font-family: cursive;
 }
@@ -18,7 +19,7 @@ body {
 .app {
     width: 30%;
     height: 100vh;
-    background-color: rgba(155, 180, 180, 0.6);
+    background-color: rgba(0, 0, 0,.4);
     text-align: center;
 }
 
@@ -126,12 +127,12 @@ body {
     padding-top: 3%;
     width: 93%;
     height: 90%;
-    background-color: rgba(155, 180, 180, 0.6);
+    background-color: rgba(0, 0, 0,.4);
     transition: 0.5s;
 }
 
 .popular-city:hover {
-    background-color: rgba(155, 180, 180, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 1px 1px 10px rgb(83, 120, 136);
 }
 
